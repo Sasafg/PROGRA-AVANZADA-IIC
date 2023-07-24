@@ -1,0 +1,52 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+<main aria-labelledby="title">
+    <h2 id="title">@ViewBag.Title.</h2>
+    <h3>@ViewBag.Message</h3>
+
+    <address>
+        One Microsoft Way<br />
+        Redmond, WA 98052-6399<br />
+        <abbr title="Phone">P:</abbr>
+        425.555.0100
+    </address>
+
+    <address>
+        <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
+        <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
+    </address>
+</main>
+
+<div class="container">
+
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="~/Assets/img/ff.jpg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                FideFit
+            </a>
+        </div>
+    </nav>
+
+
+    <div class="nav " style="
+                 font-size:1px;
+                 ">
+
+        @Html.ActionLink("Inicio", "Index", "Home", new { area = "" }, new { @class = "nav-link" })
+
+        @Html.ActionLink("Productos", "About", "Home", new { area = "" }, new { @class = "nav-link" })
+
+        @Html.ActionLink("Contáctanos", "Contact", "Home", new { area = "" }, new { @class = "nav-link" })
+
+    </div>
+
+    <div style="font-size:25px;">
+        @Html.Partial("_LoginPartial")
+
+    </div>
+</div>
+
+    </nav>
+
